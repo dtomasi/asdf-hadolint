@@ -44,7 +44,7 @@ get_binary_path_in_archive() {
 }
 
 get_platform() {
-  echo "$(uname)-x86_64"
+  echo "$(uname -s)-$(uname -m)"
 }
 
 get_filename() {
